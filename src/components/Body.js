@@ -11,7 +11,7 @@ const Body = () => {
    
     const getTodos= async()=>{
     
-        const data= await axios.get('http://localhost:8000/todos');
+        const data= await axios.get('https://todo-project-dkjcx7rg6-akshat-singhs-projects-5fe4f296.vercel.app/todos');
       //  const data= await axios.get('http://[::1]:8080/todos');
         console.log(data.data);
         setTodos(data.data);
@@ -23,7 +23,7 @@ const Body = () => {
 
     const deleteTodo= async(id)=>{
         
-        const res=await axios.delete(`http://localhost:8000/todos/${id}`);
+        const res=await axios.delete(`https://todo-project-dkjcx7rg6-akshat-singhs-projects-5fe4f296.vercel.app/${id}`);
         
         if(res.data._id){
             const filteredTodos= todos.filter((t)=>t._id!== res.data._id);

@@ -34,7 +34,7 @@ const Addtodo = () => {
 
      const addTodo= async()=>{
 
-        const res= await axios.post("http://localhost:8080/todos", formData);
+        const res= await axios.post("https://todo-project-dkjcx7rg6-akshat-singhs-projects-5fe4f296.vercel.app/todos", formData);
         console.log(res.data.msg);
      }
   
