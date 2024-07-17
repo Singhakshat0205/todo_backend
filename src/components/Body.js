@@ -23,7 +23,7 @@ const Body = () => {
 
     const deleteTodo= async(id)=>{
         
-        const res=await axios.delete(`https://todo-project-dkjcx7rg6-akshat-singhs-projects-5fe4f296.vercel.app/${id}`);
+        const res=await axios.delete(`https://todo-project-dkjcx7rg6-akshat-singhs-projects-5fe4f296.vercel.app/todos/${id}`);
         
         if(res.data._id){
             const filteredTodos= todos.filter((t)=>t._id!== res.data._id);
